@@ -16,6 +16,9 @@ function ButtonTab(){
                 <button onClick={() => changeColor('blue')}   className="text-white rounded-xl px-7 bg-blue-400">BLUE</button>
                 <button onClick={() => changeColor('indigo')} className="text-white rounded-xl px-7 bg-indigo-400">INDIGO</button>
                 <button onClick={() => changeColor('violet')} className="text-white rounded-xl px-7 bg-violet-400">VIOLET</button>
+
+                {/* onClick() -> onClick is a method that expects a function reference, thats why i have to wrap the function in an arrow function
+                , if i haven't wrapped it inside the arrow function than i won't be apple to pass the parameters inside the changeColor() function */}
             </div>
         </div>
     )
